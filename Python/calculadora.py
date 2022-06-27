@@ -28,6 +28,8 @@ def Calculadora(num1, num2, opr):
         multiplica(num1, num2)
     elif opr == 4:
         divide(num1, num2)
+    else:
+        print("resultado = 0, operação inexistente")
 
 
 Calculadora(1, 2, 1)  # soma
