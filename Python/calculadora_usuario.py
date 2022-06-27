@@ -14,6 +14,8 @@ def multiplica(num1, num2):
 
 
 def divide(num1, num2):
+    if num2 == 0:
+        return print("0 nao e um dividendo!!")
     resultado = num1 / num2
     print(f'Resultado da divisao = {resultado}')
 
