@@ -29,10 +29,11 @@ def Calculadora(num1, num2, opr):
     elif opr == 4:
         divide(num1, num2)
     else:
-        print("resultado = 0, operação inexistente")
+        print("resultado = 0, operacao inexistente")
 
 
 Calculadora(1, 2, 1)  # soma
 Calculadora(4, 3, 2)  # subtrai
 Calculadora(5, 5, 3)  # multiplica
 Calculadora(12, 2, 4)  # divide
+Calculadora(45, 2, 5)  # erro de operação
