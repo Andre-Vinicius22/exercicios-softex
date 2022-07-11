@@ -1,0 +1,1 @@
+console.log("escolhi o VSCODE como ide para java script")
