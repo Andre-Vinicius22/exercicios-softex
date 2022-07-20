@@ -1,1 +1,2 @@
-Pasta para Exercicios da formação softex.
+# Pasta para Exercicios da formação softex.
+Andre Vinicius Bastos Monteiro
