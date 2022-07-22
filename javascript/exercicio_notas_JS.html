@@ -1,0 +1,141 @@
+<!-- O arquivo esta em formato HTML para poder interagir com o usuario,
+    para rodar basta baixar esse aquivo e abrir no navegador -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio notas</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(45deg, black, #086e3bef);
+        }
+
+        .card {
+            height: 30rem;
+            width: 30rem;
+            margin: 4rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #11c75dd0;
+            border-radius: 4%;
+        }
+
+        .form {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            align-items: center;
+        }
+
+        input {
+            width: 15rem;
+            height: 1.5rem;
+            margin: 0.7rem;
+            padding: 0.2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            outline: none;
+            border-style: groove;
+            border-radius: 0.5rem;
+        }
+
+        @media (max-width: 425px) {
+            input {
+                font-size: 0.7rem;
+            }
+        }
+
+        button {
+            margin-top: 1rem;
+            border-radius: 2rem;
+            border-style: solid;
+            padding: 0.7rem;
+            width: 50%;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #086e3bef;
+            border-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="width: 100%;">
+        <div class="card">
+            <h1 style="color: #fff;">Qual nota preciso tirar para passar?</h1>
+            <div class="form">
+                <input type="text" id="nota1" placeholder="Nota primeira prova">
+                <input type="text" id="nota2" placeholder="Nota segunda prova">
+                <button onclick="getNota()">Enviar</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 style="color: #fff;">Verifique sua situação</h1>
+            <div class="form">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="nota_1" placeholder="Primeira nota">
+                <input type="text" id="nota_2" placeholder="Segunda nota">
+                <input type="text" id="nota_3" placeholder="Terceira nota">
+                <button onclick="getResult()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getNota() {
+            var nota1 = document.getElementById('nota1').value;
+            var nota1_number = parseFloat(nota1)
+            var nota2 = document.getElementById('nota2').value;
+            var nota2_number = parseFloat(nota2)
+
+            var soma_notas = nota1_number + nota2_number;
+
+            var media_aprovado = 21 - soma_notas
+
+            if (media_aprovado <= 10) {
+                alert('Voce precisa tirar : ' + media_aprovado + '\n para ser Aprovado com media 7')
+            } else {
+                alert('Voce ja esta em recuperação')
+            }
+        }
+
+        function getResult() {
+            var nome = document.getElementById('nome').value;
+            var nota_1 = document.getElementById('nota_1').value;
+            var nota_1_number = parseFloat(nota_1)
+            var nota_2 = document.getElementById('nota_2').value;
+            var nota_2_number = parseFloat(nota_2)
+            var nota_3 = document.getElementById('nota_3').value;
+            var nota_3_number = parseFloat(nota_3)
+
+            var media = (nota_1_number + nota_2_number + nota_3_number) / 3;
+
+            var resultado = (media >= 7 ? alert(nome + '\n APROVADO') : alert(nome + '\n REPROVADO'));
+
+            return resultado;
+        }
+
+    </script>
+</body>
+
+</html>
