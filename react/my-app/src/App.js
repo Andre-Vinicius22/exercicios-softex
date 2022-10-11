@@ -1,13 +1,18 @@
-import Header from './components/Header';
+import Pessoa from './components/Pessoa';
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <Header></Header>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Pessoa
+          foto="https://avatars.githubusercontent.com/u/89954543?v=4"
+          nome="André"
+          idade="22"
+          profissao="Developer"
+        />
         <a
           className="App-link"
           href="https://github.com/Andre-Vinicius22"
@@ -16,8 +21,6 @@ const App = () => {
         >
           Github: André Vinicius
         </a>
-
-        <p> Turma do Instrutor Danilo - turno noite</p>
       </header>
     </div>
   );
