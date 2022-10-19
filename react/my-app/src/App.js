@@ -1,12 +1,13 @@
 import Pessoa from './components/Pessoa';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Counter from './hooks/UseState'
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Pessoa
           foto="https://avatars.githubusercontent.com/u/89954543?v=4"
           nome="André"
@@ -21,6 +22,7 @@ const App = () => {
         >
           Github: André Vinicius
         </a>
+      <Counter></Counter>
       </header>
     </div>
   );
