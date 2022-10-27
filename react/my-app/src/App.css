@@ -2,9 +2,7 @@
   text-align: center;
 }
 
-.App a {
-  text-decoration: none;
-}
+
 
 .App-logo {
   height: 20vmin;
@@ -45,4 +43,6 @@
 .foto {
   width: 150px;
   height: 150px;
+  border-radius: 20rem;
+  border: 5px solid #24abd0;
 }
