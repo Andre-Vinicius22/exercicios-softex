@@ -13,12 +13,7 @@ const App = () => {
           idade="22"
           profissao="Developer"
         />
-        <div>
-          Github:<a className="App-link" href="https://github.com/Andre-Vinicius22" target="_blank" rel="noopener noreferrer">
-            André Vinicius
-          </a>
-        </div>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
         <Counter></Counter>
       </header>
     </div >

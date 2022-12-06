@@ -2,20 +2,8 @@
   text-align: center;
 }
 
-
-
-.App-logo {
-  height: 20vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 4s linear;
-  }
-}
-
 .App-header {
+  position: relative;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -30,14 +18,18 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.person {
+  background-color: black;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 90vh;
+  padding: 1rem;
+  border-radius: 11px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.person p {
+  font-size: 1.5rem;
 }
 
 .foto {
@@ -45,4 +37,28 @@
   height: 150px;
   border-radius: 20rem;
   border: 5px solid #24abd0;
+}
+
+.counter {
+  background-color: #24abd0;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+.counter p {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.counter button {
+  margin: 1rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid white;
+  background-color: #282c34;
+  color: #fff;
+  cursor: pointer;
 }
