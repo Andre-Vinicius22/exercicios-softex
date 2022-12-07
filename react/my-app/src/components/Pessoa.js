@@ -10,7 +10,7 @@ function Pessoa({ foto, nome, idade, profissao }) {
             <p>Profissão: {profissao}</p>
 
             <div>
-                Github: <br></br>
+                Github <br></br>
                 <a className="person-link" href="https://github.com/Andre-Vinicius22" target="_blank" rel="noopener noreferrer">
                     André Vinicius
                 </a>

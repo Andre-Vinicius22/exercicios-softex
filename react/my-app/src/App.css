@@ -24,14 +24,6 @@
   border-radius: 11px;
 }
 
-.person-link {
-  color: #61dafb;
-}
-
-.person p {
-  font-size: 1.5rem;
-}
-
 .foto {
   width: 150px;
   height: 150px;
@@ -39,11 +31,25 @@
   border: 5px solid #24abd0;
 }
 
+.person p {
+  font-size: 1.5rem;
+}
+
+.person-link {
+  color: #61dafb;
+}
+
 .counter {
   background-color: #24abd0;
   padding: 1rem 2rem;
   margin: 1rem;
   border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.counter:hover {
+  box-shadow: 5px 5px 25px #24abd0c2;
+  transform: translateY(-3px);
 }
 
 .counter p {
