@@ -1,0 +1,16 @@
+.header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link {
+    display: flex;
+}
+
+.link li{
+    margin: 0 1rem;
+    list-style: none;
+}
+

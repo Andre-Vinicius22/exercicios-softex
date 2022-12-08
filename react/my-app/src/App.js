@@ -1,23 +1,16 @@
-import Pessoa from './components/Pessoa';
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Counter from './hooks/Counter'
+import Home from './pages/Home';
+import About from './pages/about/About';
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="App-content">
-        <Pessoa
-          foto="https://avatars.githubusercontent.com/u/89954543?v=4"
-          nome="André"
-          idade="22"
-          profissao="Developer"
-        />
-
-        <Counter></Counter>
-        
-      </div>
-    </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>}/>
+        </Routes>
+      </Router>
   );
 }
 
